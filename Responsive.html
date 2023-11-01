@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Responsive Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Asset 1.svg" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Discover</a></li>
+                    <li><a href="">Experiences</a></li>
+                    <li class="join"><a href="">Join a Trip</a></li>
+                </ul>
+            </nav>
+            <img src="hamburger.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <br><br><br>
+        <div>
+            <p style="text-align: center;">Your unforgettable adventure begins here</p>
+            <p class="tagline">Experience the Philippines:<br>
+            <span class="tagline">A</span>
+            <span class="text-gradient">Tropical Paradise</span>
+            <span class="tagline">Awaits</span><br><br>
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/eSUmkFPln_U?si=bcKTYVxeVoqH0LpX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br><button type="button" class="subscribe">Subscribe to our Newsletters</button>
+            </p>
+        </div>
+        <br><br>
+        <div>
+            <p class="discover">“ Discover pristine beaches, lush jungles, and vibrant culture on these stunning islands. Dive into crystal-clear waters, explore unique wildlife, and savor mouthwatering cuisine. “</p>
+        </div>
+        <br><br>
+        <div>
+            <div>
+                <p class="text-gradient">Explore Places<br><br>
+                <div class="nave">
+                    <ul>
+                        <li>
+                            <span><img class="icon" src="food.png" alt=""></span>
+                            <span><img class="icon" src="plant.png" alt=""></span>
+                            <span><img class="icon" src="mountain.png" alt=""></span>
+                            <span><img class="icon" src="beach.png" alt=""></span>
+                        </li>
+                    </ul>
+                </div>
+                </p>
+            </div>
+        </div>
+    
+        <div>
+            <p style="align-items: center;">
+            <div class="row1">
+                <div class="col">
+                    <img class="images" src="riceterraces.jpg" alt="">
+                    <p class="img-title"><a href="">Banawe Rice Terraces</a></p>
+                    <p class="img-city">IFUGAO</p>
+                </div>
+                <div class="col">
+                    <img class="images" src="sharks.jpg" alt="">
+                    <p class="img-title"><a href="">Swim with Butanding Sharks</a></p>
+                    <p class="img-city">CEBU</p>
+                </div>
+                <div class="col">
+                    <img class="images" src="marlboro.jpg" alt="">
+                    <p class="img-title"><a href="">Marlboro Country</a></p>
+                    <p class="img-city">BATANES</p>
+                </div>
+                <div class="col">
+                    <img class="images" src="siargao.jpg" alt="">
+                    <p class="img-title"><a href="">Sugba Lagoon</a></p>
+                    <p class="img-city">SIARGAO</p>
+                </div>
+                <div class="col">
+                    <img class="images" src="pulag.jpg" alt="">
+                    <p class="img-title"><a href="">Mt. Pulag</a></p>
+                    <p class="img-city">BENGUET</p>
+                </div>
+                <div class="col">
+                    <img class="images" src="balabac.jpg" alt="">
+                    <p class="img-title"><a href="">Balabac Island</a></p>
+                    <p class="img-city">PALAWAN</p>
+            </div>
+        </p>
+
+            </div>
+        </div>
+        <br><br><br>
+    </div>   
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if(menuList.style.maxHeight == "0px")
+                {
+                menuList.style.maxHeight = "130px"
+                }
+            else {
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+</html>
